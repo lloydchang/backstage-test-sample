@@ -71,7 +71,7 @@ export function BasicBars() {
   //   month: 'Jan',
   // }];
 
-  const years
+  const years = new Set([]);
   const types = new Set([]);
   const series = [];
   newData['rows']?.array.forEach(element => {
