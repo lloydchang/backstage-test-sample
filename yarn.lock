@@ -3057,6 +3057,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage/backend-plugin-api@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@backstage/backend-plugin-api@npm:1.3.0"
+  dependencies:
+    "@backstage/cli-common": "npm:^0.1.15"
+    "@backstage/config": "npm:^1.3.2"
+    "@backstage/errors": "npm:^1.2.7"
+    "@backstage/plugin-auth-node": "npm:^0.6.2"
+    "@backstage/plugin-permission-common": "npm:^0.8.4"
+    "@backstage/plugin-permission-node": "npm:^0.9.1"
+    "@backstage/types": "npm:^1.2.1"
+    "@types/express": "npm:^4.17.6"
+    "@types/luxon": "npm:^3.0.0"
+    knex: "npm:^3.0.0"
+    luxon: "npm:^3.0.0"
+  checksum: 10c0/9e31dd759e0e6f34ec5fd677981ebc4a74a1c8ca9e6091da07bace84e5054daae80d903f399bea09c9dc4b52fb3739b7913ed5a9b357c626b048537cbce96fd0
+  languageName: node
+  linkType: hard
+
 "@backstage/catalog-client@npm:^1.7.1":
   version: 1.7.1
   resolution: "@backstage/catalog-client@npm:1.7.1"
@@ -3948,6 +3967,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage/plugin-auth-backend-module-github-provider@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@backstage/plugin-auth-backend-module-github-provider@npm:0.3.2"
+  dependencies:
+    "@backstage/backend-plugin-api": "npm:^1.3.0"
+    "@backstage/plugin-auth-node": "npm:^0.6.2"
+    passport-github2: "npm:^0.1.12"
+  checksum: 10c0/ee4a208d872831890f52ccc32dad9a142f6758861187e496f5964f00189b65698735505916ba7d8f0a8822721958caa8fd0ab00ab390c372b934dec9cf0b7b95
+  languageName: node
+  linkType: hard
+
 "@backstage/plugin-auth-backend-module-gitlab-provider@npm:^0.2.1":
   version: 0.2.1
   resolution: "@backstage/plugin-auth-backend-module-gitlab-provider@npm:0.2.1"
@@ -4177,6 +4207,29 @@ __metadata:
     zod-to-json-schema: "npm:^3.21.4"
     zod-validation-error: "npm:^3.4.0"
   checksum: 10c0/3b42bdb4e47ec9feb01b3c26af8659672a5ba1c71084f26ac952c3cfa90cbf199234eaee4024454ee19fd4a4ac88b841bbc2988c4a3d4afe6794c98238ce6943
+  languageName: node
+  linkType: hard
+
+"@backstage/plugin-auth-node@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "@backstage/plugin-auth-node@npm:0.6.2"
+  dependencies:
+    "@backstage/backend-plugin-api": "npm:^1.3.0"
+    "@backstage/catalog-client": "npm:^1.9.1"
+    "@backstage/catalog-model": "npm:^1.7.3"
+    "@backstage/config": "npm:^1.3.2"
+    "@backstage/errors": "npm:^1.2.7"
+    "@backstage/types": "npm:^1.2.1"
+    "@types/express": "npm:^4.17.6"
+    "@types/passport": "npm:^1.0.3"
+    express: "npm:^4.17.1"
+    jose: "npm:^5.0.0"
+    lodash: "npm:^4.17.21"
+    passport: "npm:^0.7.0"
+    zod: "npm:^3.22.4"
+    zod-to-json-schema: "npm:^3.21.4"
+    zod-validation-error: "npm:^3.4.0"
+  checksum: 10c0/cb49d6f2160cbfc85aa48ef54c9b4b6eeedee320aa7aaf3d41375443be259e9eb28298a18dc62dbc62d59e4a9397fb2827ea7191d2e902d697780dc3d0db6363
   languageName: node
   linkType: hard
 
@@ -4750,6 +4803,24 @@ __metadata:
     zod: "npm:^3.22.4"
     zod-to-json-schema: "npm:^3.20.4"
   checksum: 10c0/9e42de157ec6c09447a81adb76b249eec451a4d00934c77a98ce38cf51a69b2aa2aa0c7615ac32685262896ffaf648be8afee5ed93a1acf0636437df5e3de96b
+  languageName: node
+  linkType: hard
+
+"@backstage/plugin-permission-node@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "@backstage/plugin-permission-node@npm:0.9.1"
+  dependencies:
+    "@backstage/backend-plugin-api": "npm:^1.3.0"
+    "@backstage/config": "npm:^1.3.2"
+    "@backstage/errors": "npm:^1.2.7"
+    "@backstage/plugin-auth-node": "npm:^0.6.2"
+    "@backstage/plugin-permission-common": "npm:^0.8.4"
+    "@types/express": "npm:^4.17.6"
+    express: "npm:^4.17.1"
+    express-promise-router: "npm:^4.1.0"
+    zod: "npm:^3.22.4"
+    zod-to-json-schema: "npm:^3.20.4"
+  checksum: 10c0/29fcbffc61f5466e5b2babe0a7aca0bea1dd920009518ceab76ada99fa953a44e2ce4cd820411e990df9da402c3b5b725173b92643f0dcac306d050deef8a648
   languageName: node
   linkType: hard
 
@@ -14617,7 +14688,7 @@ __metadata:
     "@backstage/config": "npm:^1.2.0"
     "@backstage/plugin-app-backend": "npm:^0.3.76"
     "@backstage/plugin-auth-backend": "npm:^0.23.1"
-    "@backstage/plugin-auth-backend-module-github-provider": "npm:^0.2.1"
+    "@backstage/plugin-auth-backend-module-github-provider": "npm:^0.3.2"
     "@backstage/plugin-auth-backend-module-guest-provider": "npm:^0.2.6"
     "@backstage/plugin-auth-node": "npm:^0.5.3"
     "@backstage/plugin-catalog-backend": "npm:^1.27.0"
